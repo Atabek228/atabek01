@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>это твоя математика</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="cell input">
+                <form name="form" class="form">
+                    <input type="text" name="textview" readonly>
+                </form>
+            </div>
+            <div class="cell clear" onclick="clean()">CLEAR</div>
+            <div class="cell delete" onclick="deleteP()">DEL</div>
+            <div class="cell" onclick="insert('+')">+</div>
+            <div class="cell" onclick="insert('-')">-</div>
+            <div class="cell" onclick="insert('*')">*</div>
+            <div class="cell" onclick="insert('/')">/</div>
+            <div class="cell" onclick="insert('9')">9</div>
+            <div class="cell" onclick="insert('8')">8</div>
+            <div class="cell" onclick="insert('7')">7</div>
+            <div class="cell" onclick="insert('(')">(</div>
+            <div class="cell" onclick="insert('6')">6</div>
+            <div class="cell" onclick="insert('5')">5</div>
+            <div class="cell" onclick="insert('4')">4</div>
+            <div class="cell" onclick="insert(')')">)</div>
+            <div class="cell" onclick="insert('3')">3</div>
+            <div class="cell" onclick="insert('2')">2</div>
+            <div class="cell" onclick="insert('1')">1</div>
+            <div class="cell equal" onclick="calculate()">=</div>
+            <div class="cell zero" onclick="insert('0')">0</div>
+            <div class="cell " onclick="square()">sq</div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
